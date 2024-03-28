@@ -11,7 +11,7 @@ Route::get('/u/{user:username}', [ProfileController::class, 'index'])
     ->name('profile');
 
 Route::middleware('auth')->group(function () {
-    Route::post('/profile/update-images', [ProfileController::class, 'updateImage'])->name('profile.updateCover');
+    Route::post('/profile/update-images', [ProfileController::class, 'updateImage'])->name('profile.updateImages');
 });
 
 //Route::middleware('auth')->group(function () {
