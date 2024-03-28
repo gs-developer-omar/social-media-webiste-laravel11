@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::table('users', function (Blueprint $table) {
             $table->string('username');
             $table->string('cover_path', 1024)->nullable();
-            $table->string('avatar_path'. 1024)->nullable();
+            $table->string('avatar_path', 1024)->nullable();
         });
     }
 
